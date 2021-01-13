@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont
 import time
 from datetime import datetime
 
-client = TelegramClient('name', "1698130", "a078daf9afbd1eff0a39ac9d991168fc")
+client = TelegramClient('name', "", "")
 client.start()
 
 time1 = ''
