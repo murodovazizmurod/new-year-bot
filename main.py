@@ -12,7 +12,7 @@ time1 = ''
 def get_left_units():
     """Returns left days/hours/minutes until new year"""
     now = datetime.now()
-    days = 31 - now.day
+    days = 8 - now.day
     hours = 23 - now.hour
     minutes = 59 - now.minute
     return (days, hours, minutes)
@@ -36,7 +36,6 @@ def tick():
             d.text((180,70), str(data[0])+" days", font = font, fill = (255,255,255))
             d.text((150,180), str(data[1])+" hours", font = font, fill = (255,255,255))
             d.text((100,310), str(data[2])+" minutes", font = font, fill = (255,255,255))
-            d.text((200,500), "to New Year", font = font2, fill = (255,255,255))
             img.save('profile1.jpg')
             upload()
 
